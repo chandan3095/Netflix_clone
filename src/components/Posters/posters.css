@@ -1,0 +1,21 @@
+.posters {
+    display: flex;
+    gap: 25px;
+    overflow: hidden;
+    padding: 10px;
+    scroll-snap-type: x mandatory;
+}
+
+.posters img {
+    width: 200px;
+    height: 230px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: transform 0.3s, box-shadow 0.2s;
+    scroll-snap-align: start;
+}
+
+.posters img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+}
